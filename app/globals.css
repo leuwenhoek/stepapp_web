@@ -8,10 +8,10 @@
   :root {
     --background: #ffffff;
     --foreground: #000000;
-    --primary: #FF5F1F; /* Retro Orange */
+    --primary: #FFE000; /* Vibrant Yellow */
     --primary-foreground: #000000;
     --secondary: #e5e7eb;
-    --accent: #FF5F1F;
+    --accent: #FFE000;
     --border: #000000;
     --border-width: 4px;
     --shadow-neo: 4px 4px 0px 0px #000000;

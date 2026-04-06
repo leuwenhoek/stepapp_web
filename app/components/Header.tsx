@@ -9,7 +9,7 @@ export default function Header() {
           <div className="w-10 h-10 bg-white border-2 border-black rounded-full flex items-center justify-center neo-brutalism group-hover:bg-primary transition-colors">
              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           </div>
-          <span className="text-2xl font-black">RetroUI</span>
+          <span className="text-2xl font-black">StepApp</span>
         </Link>
 
         {/* Nav Links */}
