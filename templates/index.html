@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="bento-grid">
+    <!-- Hero Image Card -->
+    <div class="card span-8 row-1 image-card">
+        <img src="{{ url_for('get_image', filename='image_1.jpg') }}" alt="Hero Image">
+        <div class="image-overlay">THE MISSION.</div>
+    </div>
+
+    <!-- CTA Card -->
+    <div class="card span-4 orange">
+        <span class="label">// ACCESS POINT</span>
+        <h2>GET THE APK NOW.</h2>
+        <p>SECURE. FAST. INDUSTRIAL GRIT.</p>
+        <a href="{{ url_for('download') }}" class="btn btn-black">INITIATE</a>
+    </div>
+
+    <!-- Info Card -->
+    <div class="card span-4 black">
+        <span class="label" style="color: var(--primary-color);">// CORE v1.0.4</span>
+        <p>BUILT FOR PERFORMANCE. DESIGNED FOR DISRUPTION.</p>
+    </div>
+
+    <!-- Feature Image Card -->
+    <div class="card span-4 row-1 image-card">
+        <img src="{{ url_for('get_image', filename='image_2.jpg') }}" alt="Feature Image">
+        <div class="image-overlay">DESIGN.</div>
+    </div>
+
+    <!-- Specifications Card -->
+    <div class="card span-4">
+        <span class="label">// SPECIFICATIONS</span>
+        <h3>ZERO LATENCY</h3>
+        <p>OPTIMIZED DATA PIPELINES.</p>
+    </div>
+
+    <!-- Architecture Card -->
+    <div class="card span-4">
+        <span class="label">// ARCHITECTURE</span>
+        <h3>BRUTALIST</h3>
+        <p>RAW POWER. MINIMAL FLUFF.</p>
+    </div>
+
+    <!-- Full Width Feature Card -->
+    <div class="card span-12 orange">
+        <h1>UNCOMPROMISING SPEED.</h1>
+        <p>STEPAPP IS NOT JUST AN APP. IT'S A SYSTEMATIC REVOLUTION OF YOUR MOBILE WORKFLOW.</p>
+    </div>
+</div>
+{% endblock %}

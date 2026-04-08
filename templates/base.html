@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StepApp | Pixel-Brutalist</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <nav>
+        <div class="logo">STEPAPP.</div>
+        <div class="nav-links">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('download') }}">Download</a>
+            <a href="{{ url_for('docs') }}">Docs</a>
+            <a href="{{ url_for('about') }}">About</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+        <div class="footer-logo">STEPAPP_CORP</div>
+        <div class="footer-text">
+            <p>ALL SYSTEMS OPERATIONAL // 2026</p>
+            <p>ESTABLISHED IN THE GRID.</p>
+            <p style="margin-top: 10px; color: var(--primary-color);">[VER 1.0.4.px]</p>
+        </div>
+    </footer>
+</body>
+</html>

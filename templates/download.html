@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="bento-grid">
+    <div class="card span-12">
+        <span class="label">// ACCESS POINT</span>
+        <h1>DOWNLOAD ZONE.</h1>
+        <p>SECURE YOUR COPY OF STEPAPP. THE LATEST APK IS READY FOR DEPLOYMENT.</p>
+    </div>
+
+    <div class="card span-6 orange">
+        <span class="label" style="color: #000;">// METADATA</span>
+        <h2>VERSION {{ apk.version }}</h2>
+        <p>RELEASE DATE: {{ apk.release_date }}</p>
+        <p>STATUS: <span style="background: #000; color: #fff; padding: 2px 10px;">OPERATIONAL</span></p>
+        <a href="{{ apk.apk_link }}" class="btn btn-black" target="_blank">GET APK NOW</a>
+    </div>
+
+    <div class="card span-6">
+        <span class="label" style="color: var(--primary-color);">// INTEGRITY CHECK</span>
+        <h2>ENCRYPTION</h2>
+        <p>PACKAGES ARE SCANNED FOR SYSTEM INTEGRITY BEFORE DEPLOYMENT.</p>
+        <p>HASH: MD5_STP_PACK_A1</p>
+    </div>
+
+    <div class="card span-12" style="background-color: #000; color: #fff;">
+        <span class="label" style="color: var(--primary-color);">// WARNING</span>
+        <p>INSTALLING FROM UNKNOWN SOURCES IS REQUIRED FOR DEPLOYMENT. PROCEED AT YOUR OWN .</p>
+    </div>
+</div>
+{% endblock %}

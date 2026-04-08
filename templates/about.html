@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="bento-grid">
+    <!-- About Header -->
+    <div class="card span-12 orange">
+        <h1>ABOUT THE ARCHITECTS.</h1>
+        <p>THE MINDS BEHIND THE PIXELS. WE BUILD TOOLS FOR THE MODERN INDUSTRIAL COMPLEX.</p>
+    </div>
+
+    <!-- Developer Info Card -->
+    <div class="card span-6">
+        <span class="label">// SYSTEM ARCHITECT</span>
+        <h2>ID: ADMIN_STP</h2>
+        <p>EXPERTISE: LOW-LEVEL FLASK MAGIC, BRUTALIST CSS, INDUSTRIAL DESIGN.</p>
+        <p>QUOTE: "IF IT'S NOT REDUCED TO ITS ESSENTIALS, IT'S NOT PERFORMING."</p>
+    </div>
+
+    <!-- Architect Image Card -->
+    <div class="card span-6 row-1 image-card">
+        <img src="{{ url_for('get_image', filename='image_3.jpg') }}" alt="Architect Image">
+        <div class="image-overlay">THE STUDIO.</div>
+    </div>
+
+    <!-- Contact Card -->
+    <div class="card span-6 black">
+        <span class="label" style="color: var(--primary-color);">// CHANNELS</span>
+        <h3>CONNECT</h3>
+        <p>EMAIL: DEV@STEPAPP.IO</p>
+        <p>GITHUB: /STEPAPP-OFFICIAL</p>
+    </div>
+
+    <!-- History Card -->
+    <div class="card span-12 orange">
+        <span class="label">// CHRONOLOGY</span>
+        <h3>ESTABLISHED 2026</h3>
+        <p>OPERATIONAL STATUS: FULL CAPACITY. MISSION: DISRUPTIVE MOBILE SOLUTIONS.</p>
+    </div>
+</div>
+{% endblock %}
